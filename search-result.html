@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <p style="font-family:merriweather"><title>Results | the Library of Congress Search</title></p>
-        <!--adjust width to device settings-->
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.5"/>
-        <!--add css & java-->
-        <link rel="stylesheet" href="./search.css"/>
-        <link rel="stylesheet" href="./search.js"
-    </head>
+<head>
+    <p style="font-family:merriweather"><title>Results | the Library of Congress Search</title></p>
+    <!--adjust width to device settings-->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.5"/>
+    <!--add css & java-->
+    <link rel="stylesheet" href="./search.css"/>
+    <link rel="stylesheet" href="./search.js">
+</head>
 
-    <body>
-        <h1>Library of Congress Search Engine</h1>
-        <!--search bar/drop down menu index-->
-        <input id="search-input"
-                class="form-input w-100"
-                type="text"
-                placeholder="Search here">
-        <select id="format-input"
-                class="form-input w-100">
-            <!--media options for the search results-->
-            <option value="" disabled selected>Select a Medium</option>
-            <option value="maps">Maps</option>
-            <option value="audio">Audio</option>
-            <option value="photos">Photos</option>
-            <option value="manuscripts">Manuscripts</option>
-            <option value="newspapers">Newspapers</option>
-            <option value="film-and-videos">Film and Videos</option>
-            <option value="notated-music">Notated Music</option>
-            <option value="websites">Websites</option>    
-        </select>
-        <!--prevent refresh-->
-        <form onsubmit="return false;" id="myForm">
-        </form>
-        <!--show search results-->
-        <h2>Now showing results for <span id="result-text"></span></h2>
-            <div id="result-content"></div>
-            <script src="search.js"></script>
-    </body>
+<body>
+    <h1>Library of Congress Search Engine</h1>
+    <!--search bar/drop down menu index-->
+    <input id="search-input"
+            class="form-input w-100"
+            type="text"
+            placeholder="Search here">
+    <select id="format-input"
+            class="form-input w-100">
+        <!--media options for the search results-->
+        <option value="" disabled selected>Select a Medium</option>
+        <option value="maps">Maps</option>
+        <option value="audio">Audio</option>
+        <option value="photos">Photos</option>
+        <option value="manuscripts">Manuscripts</option>
+        <option value="newspapers">Newspapers</option>
+        <option value="film-and-videos">Film and Videos</option>
+        <option value="notated-music">Notated Music</option>
+        <option value="websites">Websites</option>    
+    </select>
+    <!--prevent refresh-->
+    <form onsubmit="return false;" id="myForm">
+    </form>
+    <!--show search results-->
+    <h2>Now showing results for <span id="result-text"></span></h2>
+        <div id="result-content"></div>
+        <script src="search.js"></script>
+</body>
 </html>
